@@ -1,3 +1,12 @@
+#project-area {
+  margin-top: 80px;
+}
+
+#project-area h2 {
+  color: #1e3851;
+  font-size: 2.25rem;
+}
+
 .projecu-wrap {
   width: 990px;
   margin: 5px auto;
@@ -27,22 +36,29 @@
   border-radius: 5px;
 }
 
-@media (max-width: 990px) {
-  .projecu-wrap {
-    width: 500px;
-  }
-
-  .project-item {
-    width: 230px;
-  }
-}
-
-@media (max-width: 750px) {
+/* スマホ対応（〜768px） */
+@media (max-width: 768px) {
   .projecu-wrap {
     width: 80%;
+    display: block;
   }
 
   .project-item {
     width: 100%;
+  }
+
+  #project-area h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* タブレット対応（769px〜1024px） */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projecu-wrap {
+    width: 750px;
+  }
+
+  .project-item {
+    width: 355px;
   }
 }

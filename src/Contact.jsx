@@ -38,9 +38,9 @@ const Contact = () => {
 
   // 4. ここが **コンポーネントの戻り値**（JSX）
   return (
-    <div className="contact-area">
+    <div id="contact-area">
       <form onSubmit={onSubmit}>
-        <h3>お問い合わせフォーム</h3>
+        <h2>Contact</h2>
         <input
           name="name"
           value={form.name}
@@ -83,10 +83,6 @@ const Contact = () => {
         </button>
         <p className="status-text">{status}</p>
       </form>
-      <div className="contact-detail-area">
-        <h3>連絡先</h3>
-        <p>2301100228qq@cyber-u.ac.jp</p>
-      </div>
     </div>
   );
 };

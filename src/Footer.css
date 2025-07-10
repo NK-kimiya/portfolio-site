@@ -1,0 +1,11 @@
+footer {
+  margin-top: 80px;
+  width: 100%;
+  border-top: solid 1px gainsboro;
+  padding: 20px;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+}

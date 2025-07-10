@@ -1,0 +1,28 @@
+#about-area {
+  width: 980px;
+  margin: 0px auto;
+  padding-top: 80px;
+}
+
+#about-area h2 {
+  color: #1e3851;
+  font-size: 2.25rem;
+}
+
+/* スマホ対応（〜768px） */
+@media (max-width: 768px) {
+  #about-area {
+    width: 80%;
+  }
+
+  #about-area h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* タブレット対応（769px〜1024px） */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about-area {
+    width: 750px;
+  }
+}

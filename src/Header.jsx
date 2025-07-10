@@ -6,11 +6,23 @@ const Header = () => {
   return (
     <div>
       <header>
-        <h1>Kimiyasu</h1>
+        <h1>
+          <Link to="/">
+            <img src="portfolio-logo.png"></img>
+          </Link>
+        </h1>
         <nav className="none-responsive-nav">
-          <Link to="/about">About</Link>
-          <Link to="/project">Project</Link>
-          <Link to="/contact">Contact</Link>
+          <ul>
+            <li>
+              <a href="#project-area">Project</a>
+            </li>
+            <li>
+              <a href="#about-area">About</a>
+            </li>
+            <li>
+              <a href="#contact-area">Contact</a>
+            </li>
+          </ul>
         </nav>
 
         {/* ▼ ハンバーガーアイコン（スマホ） */}
@@ -32,15 +44,17 @@ const Header = () => {
               ×
             </button>
             <nav>
-              <Link to="/about" onClick={() => setResponsiveDisplay(false)}>
-                About
-              </Link>
-              <Link to="/project" onClick={() => setResponsiveDisplay(false)}>
-                Project
-              </Link>
-              <Link to="/contact" onClick={() => setResponsiveDisplay(false)}>
-                Contact
-              </Link>
+              <ul>
+                <li>
+                  <a href="#project-area">Project</a>
+                </li>
+                <li>
+                  <a href="#about-area">About</a>
+                </li>
+                <li>
+                  <a href="#contact-area">Contact</a>
+                </li>
+              </ul>
             </nav>
           </div>
         )}

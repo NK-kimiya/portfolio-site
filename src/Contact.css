@@ -1,21 +1,22 @@
-h3 {
-  font-size: 25px;
-}
-
 .status-text {
   color: red;
 }
 
-.contact-area {
-  width: 980px;
-  margin: 5px auto;
-  display: flex;
-  justify-content: space-around;
+#contact-area {
+  width: 500px;
+  margin: 0px auto;
+  margin-top: 80px;
 }
 
-.contact-area form {
+#contact-area h2 {
+  width: 100%;
+  color: #1e3851;
+  font-size: 2.25rem;
+}
+
+#contact-area form {
   padding: 20px 0px;
-  width: 490px;
+  width: 100%;
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
@@ -24,11 +25,11 @@ h3 {
     var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }
 
-.contact-area form h3 {
+#contact-area form h3 {
   text-align: center;
 }
 
-.contact-area form input {
+#contact-area form input {
   display: block;
   width: 450px;
   height: 50px;
@@ -39,7 +40,7 @@ h3 {
   border-radius: 5px;
 }
 
-.contact-area form textarea {
+#contact-area form textarea {
   display: block;
   width: 450px;
   height: 200px;
@@ -51,7 +52,7 @@ h3 {
   margin: 20px auto;
 }
 
-.contact-area form button {
+#contact-area form button {
   display: block;
   width: 250px;
   height: 50px;
@@ -61,28 +62,27 @@ h3 {
   border: none;
 }
 
-@media (max-width: 980px) {
-  .contact-area {
-    width: 80%;
-    display: block;
-  }
-
-  .contact-area form {
-    width: 100%;
-  }
-
-  .contact-area form input {
+/* スマホ対応（〜768px） */
+@media (max-width: 768px) {
+  #contact-area {
     width: 80%;
   }
-
-  .contact-area form textarea {
-    width: 80%;
+  #contact-area h2 {
+    font-size: 1.5rem;
   }
 
-  .contact-area form button {
-    width: 80%;
+  #contact-area form input {
+    width: 90%;
+  }
+
+  #contact-area form textarea {
+    width: 90%;
   }
 }
 
-@media (max-width: 750px) {
+/* タブレット対応（769px〜1024px） */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #contact-area {
+    width: 80%;
+  }
 }
