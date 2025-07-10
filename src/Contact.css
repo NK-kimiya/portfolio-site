@@ -65,7 +65,7 @@
 /* スマホ対応（〜768px） */
 @media (max-width: 768px) {
   #contact-area {
-    width: 80%;
+    width: 90%;
   }
   #contact-area h2 {
     font-size: 1.5rem;
@@ -76,6 +76,10 @@
   }
 
   #contact-area form textarea {
+    width: 90%;
+  }
+
+  #contact-area form button {
     width: 90%;
   }
 }
