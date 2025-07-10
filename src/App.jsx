@@ -5,12 +5,14 @@ import Contact from "./Contact";
 import Project from "./Project";
 import Header from "./Header";
 import "./App.css";
+import Top from "./Top";
 function App() {
   return (
     <div>
       <Header />
       {/* --- ルーティング --- */}
       <Routes>
+        <Route path="" element={<Top />} />
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
