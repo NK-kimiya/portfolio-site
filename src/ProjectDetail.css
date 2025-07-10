@@ -1,0 +1,54 @@
+.project-detail-area {
+  width: 980px;
+  margin: 5px auto;
+}
+
+.project-detail-area h2 {
+  color: #1e3851;
+  font-size: 2.25rem;
+}
+
+.project-detail-area h3 {
+  color: #1e3851;
+  font-size: 2rem;
+}
+
+.project-detail-area h4 {
+  color: #1e3851;
+  font-size: 1.5rem;
+}
+
+.project-detail-area h5 {
+  color: #1e3851;
+  font-size: 1.3rem;
+}
+
+.project-detail-area a {
+  display: block;
+  color: #1e3851;
+  overflow-wrap: break-word;
+}
+
+.video-frame {
+  display: block;
+  width: 80%;
+  height: 300px;
+  margin: 5px auto;
+}
+
+video {
+  width: 100%;
+}
+/* スマホ対応（〜768px） */
+@media (max-width: 768px) {
+  .project-detail-area {
+    width: 80%;
+  }
+}
+
+/* タブレット対応（769px〜1024px） */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-detail-area {
+    width: 750px;
+  }
+}

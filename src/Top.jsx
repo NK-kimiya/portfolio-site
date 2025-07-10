@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import "./Top.css";
+import "./About.css";
+import "./Project.css";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import { Routes, Route, Link } from "react-router-dom";
+import Header from "./Header";
+
 const Top = () => {
   return (
     <div>
+      <Header />
       <div className="main-visual">
         <div className="catch-title">
           <h1>Kimiyasu's Portfolio</h1>
@@ -17,22 +23,32 @@ const Top = () => {
       <div id="project-area">
         <h2>Project Portfolio</h2>
         <div className="projecu-wrap">
-          <div className="project-item">
-            <img src="web-conpe.jpg"></img>
-            <p>第24回全国高校Webコンテスト</p>
-          </div>
-          <div className="project-item">
-            <img src="hack-u.jpg"></img>
-            <p>OPEN HUCK U 2023 ONLINE</p>
-          </div>
-          <div className="project-item">
-            <img src="codebridge.jpg"></img>
-            <p>Code Bridge</p>
-          </div>
-          <div className="project-item">
-            <img src="cancer.jpg"></img>
-            <p>診断システム</p>
-          </div>
+          <Link to="/web-conpe">
+            <div className="project-item">
+              <img src="web-conpe.jpg"></img>
+              <p>第24回全国高校Webコンテスト</p>
+            </div>
+          </Link>
+
+          <Link to="/hack">
+            <div className="project-item">
+              <img src="hack-u.jpg"></img>
+              <p>OPEN HUCK U 2023 ONLINE</p>
+            </div>
+          </Link>
+
+          <Link to="/code-bridge">
+            <div className="project-item">
+              <img src="codebridge.jpg"></img>
+              <p>Code Bridge</p>
+            </div>
+          </Link>
+          <Link to="/cancer-system">
+            <div className="project-item">
+              <img src="cancer.jpg"></img>
+              <p>白血病癌の診断システム</p>
+            </div>
+          </Link>
         </div>
       </div>
 

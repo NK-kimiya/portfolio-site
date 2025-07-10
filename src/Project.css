@@ -28,6 +28,8 @@
 .project-item p {
   padding: 20px 0px;
   text-align: center;
+  color: #1e3851;
+  text-decoration: none;
 }
 
 .project-item img {
